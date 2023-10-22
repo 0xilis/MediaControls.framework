@@ -46,5 +46,23 @@
  [self updateVisualStyling];
  return;
 }
-
+-(void)updateContentSizeCategory {
+ UIFont *mru_routeFont = [UIFont mru_routeFont];
+ UIFont *mru_titleFont = [UIFont mru_titleFont];
+ UIFont *mru_subtitleFont = [UIFont mru_subtitleFont;
+ long long layout = self->_layout;
+ MPRouteLabel *routeLabel = [self routeLabel];
+ UIFont *hmm = mru_routeFont;
+ if (layout == 0x3) {
+  hmm = mru_titleFont;
+ }
+ [routeLabel setFont:hmm];
+ UILabel *titleLabel = [self titleLabel];
+ [titleLabel setFont:mru_titleFont];
+ UILabel *subtitleLabel = [self subtitleLabel];
+ [subtitleLabel setFont:mru_subtitleFont];
+ UILabel *placeholderLabel = [self placeholderLabel];
+ [placeholderLabel setFont:mru_titleFont];
+ return;
+}
 @end
