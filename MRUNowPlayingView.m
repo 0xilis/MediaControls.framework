@@ -8,7 +8,7 @@
   MRUNowPlayingControlsView *nowPlayingControlsView = [[MRUNowPlayingControlsView alloc]init];
   _controlsView = nowPlayingControlsView;
   [self addSubview:_controlsView];
-  MRUNowPlayingContainerView *nowPlayingContainerView = rax = [[MRUNowPlayingContainerView alloc]init];
+  MRUNowPlayingContainerView *nowPlayingContainerView = [[MRUNowPlayingContainerView alloc]init];
   _containerView = nowPlayingContainerView;
   [self addSubview:_containerView];
   MRUEmbeddingView *embeddingView = [[MRUEmbeddingView alloc]init];
